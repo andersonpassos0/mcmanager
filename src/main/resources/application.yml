@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: mcmanager
+  datasource:
+    url: jdbc:mysql://mcmanager.czyyg0wu41im.us-east-2.rds.amazonaws.com:3306/db_member
+    username: root
+    password: Idg110202#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+          naming:
+            physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  security:
+    user:
+      name: admin
+      password: admin123
+
+  server:
+    port: 8080
+
+  logging:
+    level:
+      org.springframework.web: DEBUG
+
+
+
+
