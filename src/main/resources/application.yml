@@ -10,23 +10,25 @@ spring:
       hibernate:
         ddl-auto: update
       show-sql: true
-      properties:
-        hibernate:
-          format_sql: true
-          naming:
-            physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      properties:
+#        hibernate:
+#          format_sql: true
+#          naming:
+#            physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   security:
-    user:
-      name: admin
-      password: admin123
-
-  server:
-    address: 0.0.0.0
-    port: 8080
-
-  logging:
-    level:
-      org.springframework.web: DEBUG
+    basic:
+      enabled: false
+#    user:
+#      name: admin
+#      password: admin123
+#
+#  server:
+#    address: 0.0.0.0
+#    port: 8080
+#
+#  logging:
+#    level:
+#      org.springframework.web: DEBUG
 
 
 
